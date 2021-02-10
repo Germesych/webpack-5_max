@@ -1,5 +1,10 @@
 @import "~normalize.css";
+@import "./modul/reset";
 @import "./modul/fonts";
 @import "./modul/settings";
-@import "./block/_block";
-//@include font-face("notosans", "notosans", 400);
+@import "./modul/vars";
+@import "./block/header";
+@import "./block/nav";
+@import "./block/footer";
+@import "./block/block";
+@import "./modul/media";

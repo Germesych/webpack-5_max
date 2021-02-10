@@ -42,7 +42,9 @@ const plugins = () =>{
         }),
         new CopyWebpackPlugin({
             patterns: [
-                {from: path.resolve(__dirname, 'src/assets'), to: path.resolve(__dirname, 'dist'),}
+                {from: path.resolve(__dirname, 'src/assets'), to: path.resolve(__dirname, 'dist'),},
+                {from: path.resolve(__dirname, 'src/video'), to: path.resolve(__dirname, 'dist/video'),},
+                {from: path.resolve(__dirname, 'src/fonts'), to: path.resolve(__dirname, 'dist/fonts'),}
             ]
         }),
     ];
@@ -143,7 +145,7 @@ module.exports = {
                 use: ['babel-loader'],
             },
             {
-                test: /\.(?:|gif|png|jpg|jpeg|svg|webp)$/,
+                test: /\.(?:|gif|png|jpg|jpeg|svg|webp|mp4|webm|ogv|swf)$/,
                 use: [{
                     loader: 'file-loader',
                     options: {
