@@ -1,0 +1,1 @@
+console.log('moduls/moduls.js it works')
